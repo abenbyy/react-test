@@ -1,0 +1,7 @@
+.album-card {
+  width: 18rem;
+  height: 90%;
+  background-color: var(--bg-dark-surface) !important;
+  color: var(--text-dark) !important;
+  margin: 20px;
+}
