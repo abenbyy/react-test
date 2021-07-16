@@ -7,7 +7,7 @@ function AlbumPage(){
     const [tracks, setTracks] = useState([])
 
     useEffect(() => {
-        fetch(`http://spotify-rest.up.railway.app/album?id=${id}`)
+        fetch(`https://spotify-rest.up.railway.app/album?id=${id}`)
         .then(res => res.json())
         .then(data => {
             console.log(data.data)

@@ -7,7 +7,7 @@ function ArtistPage(){
     const [albums, setAlbums] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://spotify-rest.up.railway.app/artist?query=${encodeURI(name)}`)
+        fetch(`https://spotify-rest.up.railway.app/artist?query=${encodeURI(name)}`)
         .then(res => res.json())
         .then(data => {
             setAlbums(data.data.albums);
